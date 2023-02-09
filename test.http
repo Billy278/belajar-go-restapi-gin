@@ -1,0 +1,38 @@
+### find all
+GET http://localhost:8080/api/produk
+Accept: application/json
+
+### create
+POST http://localhost:8080/api/produk
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name" :"Billy",
+    "deskripsi" :"Test Input data"
+}
+
+###update
+PUT http://localhost:8080/api/produk/4
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name" :"Bima",
+    "deskripsi" :"Bima Borjong"
+}
+
+
+### find id
+GET  http://localhost:8080/api/produk/1
+Accept: application/json
+Content-Type: application/json
+
+### delete
+DELETE http://localhost:8080/api/produk
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id" :6
+}
